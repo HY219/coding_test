@@ -13,12 +13,14 @@ const scores = prompt("세 과목 점수 입력해라", "20 30 40"); // 20 30 40
 
 //배열로 만들기
 const score = scores.split(" "); //['20', '30', '40']
+//scores.split(""); //['2','0',' ','3','0',' ','4','0']
 
 let sum = 0;
-//10진수로 묶기
+//Number을 사용하여 string -> 숫자 로 변경
 for (i = 0; i < 3; i++) {
   sum += Number(score[i]);
 }
+//Math.floor()로 소수점 이하 버리기
 const array = Math.floor(sum / score.length);
 
 console.log(array);
