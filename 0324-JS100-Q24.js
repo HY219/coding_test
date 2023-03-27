@@ -3,3 +3,5 @@
 const str = prompt("참가자의 이름");
 const upperCaseStr = str.toUpperCase();
 console.log(upperCaseStr);
+
+//toUpperCase //소문자 -> 대문자
